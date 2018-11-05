@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>My App Project-Bootstrap!</title>
+    <style type="text/css">
+    .jumbotron{
+        background-image: url(bootstrap1.jpg);
+        text-align: center;
+        margin-top: 50px;
+    }
+    #email{
+      width: 300px;
+    }
+    #appSummary{
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .card-img-top{
+      width:239px;
+      
+    }
+  #appStoreIcon{
+
+width: 200px;
+
+  }
+  #footer{
+    background-color: aqua;
+    padding-top: 50px;
+    margin-top: 50px;
+    text-align: center;
+    width: 1000px;
+    height: 250px;
+    padding-bottom: 100px;
+  }
+  body{
+    position:relative;
+  }
+    
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="150">
+      <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light" id="navbar"><!--success makes it green, warning yellow, primary/info blue etc-->
+          <a class="navbar-brand" href="#">MyApp</a> <!--for logo-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"> <!--active class makes it a bit darker e.g home-->
+                <a class="nav-link" href="#jumbotron">Home <span class="sr-only">(current)</span></a> <!--href "#"makes it to go back to the the page i.e jumbotron in this case-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a><!--#about takes you to card deck info-->
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="#footer">Download The App</a><!--takes user to footer info-->
+            </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="email" placeholder="Email">
+                <input class="form-control mr-sm-2" type="password" placeholder="Password">
+                <button class="btn btn-success my-2 my-sm-0">Login</button>
+              </nav>
+              </form>
+              </div>
+       
+        <div class="jumbotron" id="jumbotron">
+            <h1 class="display-4">My Awesome App!</h1>
+            <p class="lead">This is why YOU should download this App if you want to know About Diani Beach, Kenya</p>
+            <hr class="my-4">
+            <p>Want to Know More? Join our mailing list!</p>
+
+            <form class="form-inline justify-content-center">
+              <div class="form-group">
+                <label class="sr-only" for="email">Email Address</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                <input type="email" class="form-control" id="email"placeholder="Your email">
+              </div>
+             </div>
+             <button type="submit" class="btn btn-primary">Sign Up</button>
+
+            </form>
+            </div>
+            <div class="container">
+              <div id="appSummary">
+                <h1>Why This App is Awesome</h1>
+                <p class="lead">Diani is a spectacular world famous holiday Destination. It is situated in the South Coast, Kenya</p>
+              </div>
+            </div>
+            <!--Deck Cards-->
+            <div class="container" id="about">
+            <div class="row">
+            <div class="card-deck">
+              <div class="card col-sm-3">
+                <img class="card-img-top" src="diani5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fa fa-anchor" aria-hidden="true"></i>Sky Diving</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  
+                </div>
+              </div>
+              <div class="card col-sm-3">
+                <img class="card-img-top" src="diani3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fa fa-bicycle" aria-hidden="true"></i>Breathtaking White Sand Beaches</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  
+                </div>
+              </div>
+              <div class="card col-sm-3"><!--remove this col-sm-3-->
+                <img class="card-img-top" src="diani4.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><i class="fa fa-bed" aria-hidden="true"></i>Fantastic Hotels and Resorts</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+     
+          <div class="container" id="footer">
+            <!--<div class="row">-->
+              <h2>Download The App!</h2>
+              <p class="lead">Really! Why should Idownload this App?</p>
+            <p><a href=""><img id="appStoreIcon" src="appstoreapple.png"></a></p>
+            
+          </div>
+            
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+  </body>
+</html>
