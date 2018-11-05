@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <title>For Loops</title>
+
+    </head>
+    <body>
+<div id="tweetDiv"></div>
+        <script type="text/javascript">
+            var tweetString="";//ALWAYS GIVE YOUR VARIABLES A VALUE EVEN IF IT IS AN "" EMPTY STRING
+
+        var tweets=["Morning Everybody", "I love my Coffee","Night Night!", "Sweetdreams"];
+        for(var i=0; i<tweets.length; i++) {
+           // alert(tweets[i]);
+           tweetString=tweetString + "<p>" + tweets[i] + "</p>";
+        }
+        document.getElementById("tweetDiv").innerHTML=tweetString;
+
+        //While Loops
+
+        var tweetString="";//ALWAYS GIVE YOUR VARIABLES A VALUE EVEN IF IT IS AN "" EMPTY STRING
+
+        var tweets=["Morning Everybody", "I love my Coffee","Night Night!", "Sweetdreams"];
+        var i=0;
+        while(i<tweets.length) {
+    
+           tweetString=tweetString + "<p>" + tweets[i] + "</p>"
+           i++;
+        }
+        document.getElementById("tweetDiv").innerHTML=tweetString;
+        //a i++ adds 1 to i
+        /*for(var i=5; i>0; i--) {
+            alert(i);
+        } this is the opposite*/
+        
+        
+        </script>
+    </body>
+</html>

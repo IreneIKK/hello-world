@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arrays</title>
+</head>
+<body>
+   
+    <p>What is the Magic Word?</p>
+    <p><input type="text" id="magicWord"></p>
+    <P><button id="checkMagicWord">Enter</button></P>
+    <!--end of arrays..next is game-->
+    <p>How many Fingers am I holding up?</p>
+    <p><input type="text" id="guess"><button id="checkGuess">Guess!</button></p>
+
+<script type="text/javascript">
+
+var myArray= new Array();
+
+        myArray[0]="Pizza";
+        myArray[1]="Chocolate";
+        var tweets=["Morning Everybody!", "I Love My Coffee!"]
+        tweets.push("Back to Work!"); // 'push'adds another third item to the array
+        tweets.splice(1, 1, "Cornflakes for Brakfast"); //'splice' command removes items from the array..this will delete item 1 starting at item 1, can also add item ie cornflakes..
+        console.log(tweets);
+        //end
+        
+        /*document.getElementById("checkMagicWord").onclick=function (){
+            var magicWordEntered=document.getElementById ("magicWord").value;
+            var magicWord="abracadabra";
+            if(magicWordEntered==magicWord) {
+                alert("You Got It!");
+
+            } else {
+                alert("Nope, Try Again!");
+        }
+        }*/
+        //END, GAME CREATION
+        document.getElementById("checkGuess").onclick=function(){
+            var randomNumber= Math.random();
+            randomNumber=randomNumber * 6;
+            randomNumber=Math.floor(randomNumber);
+            if(document.getElementById("guess").value==randomNumber) {
+            alert("True,Well Done!");
+            }else{
+                alert("False, The Number was" + randomNumber);
+            }
+
+        }
+       // alert(Math.floor(Math.random() * 5));
+    </script>
+    </body>
+    </html>
