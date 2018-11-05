@@ -1,0 +1,33 @@
+<!doctype htlm>
+<html>
+        <head>
+    <title>jQuery3-Fading</title>
+    <script type="text/javascript" src="jquery.min.js"></script> 
+   
+        </head>
+        <style type="text/css">
+      #circle{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 50px;
+            background-color: green;
+}
+
+        </style>
+        <body>
+            <div id="circle"></div>
+            <script type="text/javascript">
+            $("#circle").click(function(){
+            $(this).animate({
+                width:"400px", 
+                height:"400px",
+                marginLeft:"100px",
+                marginTop:"100px",
+                },2000, function(){
+                    $(this).css("background-color", "red");
+                });// put curly brackets to show it is an object
+            });
+            </script>
+            </body>
+            </html>

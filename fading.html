@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+        <head>
+    <title>jQuery3-Fading</title>
+    <script type="text/javascript" src="jquery.min.js"></script> 
+   
+        </head>
+        <style type="text/css">
+       /* #circle{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 50px;
+            background-color: green;
+            }
+            .square{
+            width: 150px;
+            height: 150px;
+            margin: 50px;
+            background-color: red;
+
+            }
+            */
+            #hiddenText{
+                display:none;
+            }
+
+            </style>
+            <body>
+                <!--<p id="text">This paragraph is going to fade out when button is clicked. Watch out!</p>
+                <p id="hiddenText">This Paragraph is initially hidden</p>
+                <button id="fadeOut">FadeOut Text</button>
+                <button id="fadeIn">FadeIn Text</button>-->
+                <p id="textP">This is paragaraph will toggle</p>
+                <button id="toggle">Toggle</button>
+<!--<div id="circle"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                <script type="text/javascript">
+                $("div").click(function() {
+                    $(this).fadeOut("slow",function() {
+                        alert("FadeOut has finished");
+                    });
+
+});
+
+                </script>-->
+                <script type="text/javascript">
+               /*$("#fadeOut").click(function(){
+                    $("#text").fadeOut();
+                });
+                $("#fadeIn").click(function(){
+                    $("#hiddenText").fadeIn();
+                });*/
+                   $("#toggle").click(function(){
+                   if($("#textP").css("display")=="none"){
+                       $("#textP").fadeIn();
+
+                   }else{
+                    $("#textP").fadeOut();
+                   }
+                   });
+
+
+                
+
+                </script>
+            </body>
+            </html>

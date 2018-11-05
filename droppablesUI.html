@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+        <head>
+    <title>Droppables-UI</title>
+    <script type="text/javascript" src="jquery.min.js"></script> 
+    <script src="jquery-ui/jquery-ui.js"></script>   
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+
+    <style type="text/css">
+
+
+    </style>
+
+        </head>
+        <body>
+<div id="droppable" style="width:400px; height:300px; background-color:blue">
+    <span>droppable</span>
+</div>
+<div id="draggable" style="width:250px; height:200px; background-color:yellowgreen">
+    <p>Drag to big Square</p>
+<
+            
+        <script type="text/javascript">
+    $("#draggable").draggable();
+    $("#droppable").droppable({
+        drop:function(event, ui){
+
+            //alert("Dropped");
+            //console.log(event); this checks the type of event
+
+        }
+        });
+      
+       
+         
+        
+            </script>
+            </body>
+            </html>
