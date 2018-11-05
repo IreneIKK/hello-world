@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+    <head>
+        <title>ANZAN LIMITED</title>
+        <script type="text/javascript" src="jquery.min.js"></script>  
+    </head>
+    <style type="text/css">
+    body{
+margin: 0;
+padding: 0;
+font-family:Helvetica, Arial, sans-serif;
+}
+    #top-bar{
+        width: 1500px;
+margin: 0 auto;
+height: 138px;
+background-color:brown;
+float:left;
+    }
+    #logo{
+    
+width: 150px;
+float: left;
+margin-right: 1px;
+    }
+    .topbar-section{
+float: left;
+border-left:2px #CCCCCC solid;
+height: 90%;
+}
+.topbar-menu {
+font-weight: bold;
+font-size: 180%;
+padding: 30px 22px 0 25px;
+height: 30px;
+color: beige;
+
+}
+a:hover{
+    text-decoration: none;
+    color:aliceblue;
+    
+
+}
+#topic1{
+    padding: 10px 12px 0 10px;
+    float:left;
+    font-weight: bold;
+    font-size: 100%;
+    width: 400px
+}
+   
+h1{
+padding: 0;
+margin: 0;
+font-size: 20px;
+font-weight:normal;
+padding-top: 10px;
+float: left;
+color:blue;
+
+}
+#topic2{
+float: left;
+width:400px;
+position: relative;
+top:-10px;
+font-size: 100%;
+
+}
+.clear{
+    clear:both;
+}
+.image2{
+        width: 380px;
+        height: 300px;
+        margin-right: 6px;
+        position: relative;
+        top:-1px;
+}
+.image3{
+        width: 300px;
+        height: 300px;
+        margin-right: 6px;
+        position: relative;
+        top:-1px;
+}
+.image4{
+        width: 300px;
+        height: 300px;
+        margin-right: 6px;
+        position: relative;
+        top:-1px;
+}
+.image5{
+        width: 300px;
+        height: 300px;
+        margin-right: 6px;
+        position: relative;
+        top:-1px;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 10px;
+}
+.image-caption2{
+    color:brown;
+    font-size: 20px;
+
+}
+.image-caption3{
+    color:brown;
+    font-size: 20px;
+
+}
+.image-caption4{
+    color:brown;
+    font-size: 20px;
+    font-weight:normal;
+
+}
+#quality-work{
+    font-size: 15px;
+    font-weight:normal; 
+    color: green;
+}
+#textP{
+    display: none;
+}
+
+    </style>
+        
+    <body>
+        
+                    
+        <div id="top-bar">
+<img id="logo" src="images/anzan1.png">
+<div class="topbar-section topbar-menu">
+       <a href="#top-bar"> Home</a>
+    
+    </div>
+    <div class="topbar-section topbar-menu">
+           <a href="#topic1">About Us</a>
+        
+        </div>
+        <div class="topbar-section topbar-menu">
+               <a href="#topic1">Services</a>
+            
+            </div>
+            <div class="topbar-section topbar-menu">
+                    <a href="#contactUs">Contact Us</a>
+                
+                </div>
+        </div>
+        <div class="clear"></div>
+        <h1>Mission Statement</h1>
+        <div class="clear"></div>
+       
+        <p1 id="topic1">We are here to serve! We exist to offer value-added services in the area of civil & structural engineering to the communities living in Kenya and beyond, to ensure optimum utilization of appropriate technologies and sustainable management of resources for the benefit of the society.</p>
+           <div class="row">
+               <div class="column1">
+        <img class="image2" src="images/anzan2.png"><span class="image-caption2"><p>Why Choose Us</p></span>
+    </div>
+    <div class="clear"></div>
+        <div class="column2">
+        <img class="image3" src="images/anzan3.png"><span class="image-caption3"><p>Design and Supervision</p></span>
+    </div>
+    <div class="clear"></div>
+    <div class="column4">
+    <img class="image4" src="images/anzan4.png"><span class="image-caption3"><p>Construction Services</p></span>
+</div>
+<div class="clear"></div>
+    <div class="column5">
+    <img class="image5" src="images/anzan5.png">
+    <span class="image-caption3">
+        <p>Quality Work</p><p id="quality-work">Quality at the most cost-effective price is the supreme core value of ANZAN LIMITED . It shall be manifested in the excellent result of our individual and cooperative work. It is a way of life.</p>
+        <button id="toggle">Learn More</button></span>
+</div>
+        </div>
+
+        <div class="clear"></div>
+        <p id ="topic2"></p>
+                <div class="clear"></div>
+                <p>Values</p>
+                <div class="clear"></div>
+                <p> <ul>
+                    <li>Leadership: The courage to shape a better future</li>
+                    <li> Integrity: Be real</li>
+                            <li>Accountability: If it is to be, it's up to me</li>
+                                    <li>Passion: Committed in heart and mind</li>
+                                            <li>Quality: What i do, i do well (Teamwork)</li>
+
+                                            </ul>
+                                        </p>
+ <p id="textP">Anzan Limited undertakes baseline surveys, feasibility studies, projects appraisal, monitoring and evaluation of development projects especially in Water, Sanitation and Hygiene (WASH) and in general construction. We also offer on-going monitoring and supervision services at the request of the client.</p>
+ <div id="contactUs">
+     <h2> Contact Us:</h2>
+     <p>Anzan Limted</p>
+     <p> Chaka Place Hurlinghum Nairobi</p>
+     <p> Tel:0725294025</p>
+ </div>
+<script type="text/javascript">
+                  $("#toggle").click(function(){
+                   if($("#textP").css("display") =="none"){
+                       $("#textP").fadeIn();
+
+                   }else{
+                    $("#textP").fadeOut();
+                   }
+                   });
+
+</script>
+
+    </body>
+</html>
